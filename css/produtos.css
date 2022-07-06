@@ -1,0 +1,170 @@
+header {
+    height: 6rem;
+}
+
+.main_cabecalho {
+    display: block;
+    margin-bottom: 1.6rem;
+
+
+
+}
+
+.main_cabecalho h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+}
+
+.main_cabecalho__botao {
+    display: block;
+    text-decoration: none;
+    padding: 1.2rem;
+    margin-top: 1.6rem;
+
+    width: 15.1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--primary-color);
+    background-color: var(--link-color);
+
+}
+
+.main_cabecalho__botao:hover {
+    opacity: .8;
+    transition: .2s;
+}
+
+.sobre_nos svg {
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+.produtos {
+    margin-top: 3.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.produto__card .produto__referencia {
+    padding-top: 0;
+    font-size: 1.6rem;
+}
+
+.produto__card:nth-child(n + 5) {
+    display: block;
+
+}
+
+section.sobre_nos textarea {
+    height: 8.2rem;
+}
+
+
+/* RESPONSIVIDADE TABLET */
+
+@media screen and (min-width: 768px) {
+    .main_cabecalho {
+        display: flex;
+        padding-inline: 4.8rem;
+    }
+
+    section.sobre_nos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 3.2rem;
+    }
+
+    .sobre_nos svg {
+        margin-bottom: 3rem;
+    }
+
+
+    .sobre_nos nav a {
+        margin: 0;
+        display: inherit;
+
+    }
+
+    .sobre_nos nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        justify-content: flex-start;
+    }
+
+    .sobre_nos form {
+        width: 45.4rem;
+    }
+
+    .sobre_nos textarea {
+        height: 8.1rem;
+    }
+
+}
+    
+
+
+  /* RESPONSIVIDADE DESK */
+
+@media screen and (min-width: 1136px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 11.4rem;
+    }
+
+    header .cabecalho__busca {
+        margin-left: 3.2rem;
+    }
+
+    .main_cabecalho {
+        padding: 0;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main_cabecalho h1 {
+        font-size: 3.2rem;
+        line-height: 3.8rem;
+    }
+
+    .main_cabecalho a {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        padding: 1.6rem;
+        width: 15%;
+    }
+
+    .produtos {
+        margin-top: 1.6rem;
+    }
+
+
+    section.sobre_nos {
+        display: flex;
+        padding-top: 7.5rem;
+
+    }
+
+    section.sobre_nos div {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-right: 3.2rem;
+        gap: 3.2rem;
+    }
+
+    section.sobre_nos form {
+        width: 56rem;
+    }
+
+
+
+}

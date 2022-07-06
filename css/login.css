@@ -1,0 +1,124 @@
+
+section.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    padding-bottom: 7.6rem;
+}
+
+.login__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 9.7rem;
+    margin-bottom: 1.6rem;
+}
+
+.login__email,
+.login__password {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    padding-left: .8rem;
+    width: 24.7rem;
+    height: 4.1rem;
+    border: none;
+    margin-bottom: 1.6rem;
+    box-shadow: 0px 1px 1px gray;
+}
+
+.login__button {
+    display: block;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--primary-color);
+    background-color: var(--link-color);
+    border: none;
+    border-radius: .4rem;
+    padding: 1.2rem 3.4rem;
+    margin: 0 auto;
+}
+
+section.sobre_nos svg {
+    display: block;
+    margin-inline: auto;
+}
+
+/* RESPONSIVIDADE: TABLET */
+
+@media screen and (min-width: 768px) {
+
+    section.sobre_nos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        padding: 3.2rem;
+    }
+
+    .sobre_nos svg {
+        margin-bottom: 3rem;
+    }
+
+
+    .sobre_nos nav a {
+        margin: 0;
+        display: inherit;
+
+    }
+
+    .sobre_nos nav {
+        display: flex;
+        flex-direction: column;
+        gap: 2.4rem;
+        justify-content: flex-start;
+    }
+
+    .sobre_nos form {
+        width: 45.4rem;
+    }
+
+    .sobre_nos textarea {
+        height: 8.1rem;
+    }
+
+}
+
+/* RESPONSIVIDADE: DESK */
+
+@media screen and (min-width: 1136px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    header .cabecalho__busca {
+        margin-left: 3.2rem;
+    }
+
+    section.sobre_nos {
+        display: flex;
+        padding-top: 7.5rem;
+
+    }
+
+    section.sobre_nos div {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-right: 3.2rem;
+        gap: 3.2rem;
+    }
+
+    section.sobre_nos form {
+        width: 56rem;
+    }
+
+
+}

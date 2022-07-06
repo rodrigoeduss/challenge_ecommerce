@@ -1,0 +1,90 @@
+.cabecalho__botao-adm {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: var(--link-color);
+    padding: .8rem;
+    text-decoration: none;
+    border: 1px solid var(--link-color);
+}
+
+.cabecalho__botao-adm:hover {
+    background-color: var(--link-color);
+    color: var(--primary-color);
+    transition: .2s;
+     opacity: .8; 
+}
+
+section.adicionarProduto {
+    padding: 1.6rem;
+    background-color: var(--background-color);
+   
+}  
+
+.adicionarProduto__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    max-width: 569px;
+    margin: 0 auto;
+}
+
+
+
+.adicionarProduto__form h1 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+}
+
+.adicionarProduto__form input,
+textarea {
+    outline: none;
+    border: none;
+    box-shadow: 0 .5px .5px var(--text-color);
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.adicionarProduto__form input {
+    height: 5.6rem;
+    padding-left: 1rem;
+
+}
+
+.adicionarProduto__form textarea {
+    height: 8.2rem;
+    padding-top: 1rem;
+}
+
+.adicionarProduto__form button {
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: var(--primary-color);
+    background-color: var(--link-color);
+    border: none;
+    padding: 1.6rem 9.8rem;
+}
+
+/* RESPONSIVIDADE TABLET */
+
+@media screen and (min-width: 768px){
+    section.adicionarProduto {
+        padding: 3.2rem;
+    }
+
+    header .cabecalho__busca {
+       
+         margin-right: 20rem;
+    } 
+}
+
+/* RESPONSIVIDADE DESK */
+
+@media screen and (min-width: 1136px){
+    header {
+        display: flex;
+        justify-content: center;
+    }
+}
+
